@@ -11,10 +11,11 @@ const AddEntryForm = (props) => {
         // The default behavior is to refresh page on submit because the type is submit
         let newEntry = {
             // creating an object with the useState weight and date variables
-            weight: {weight},
-            date: {date}
+            weight: weight,
+            date: date
         }
-        console.log(newEntry);
+       console.log(newEntry);
+        props.addNewEntry(newEntry);
     }
 
     return (
