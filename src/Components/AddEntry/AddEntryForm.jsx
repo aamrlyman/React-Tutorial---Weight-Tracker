@@ -21,6 +21,7 @@ const AddEntryForm = (props) => {
     return (
         // form has an onsubmit attribute that is in this case, calling the handleSubmit function
         // https://getbootstrap.com/docs/4.0/content/tables/
+
         <form onSubmit={handleSubmit} className='form-grid'>
             {/* https://getbootstrap.com/docs/4.0/components/forms/ */}
             <div className='form-group'>

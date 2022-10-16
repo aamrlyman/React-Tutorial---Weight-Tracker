@@ -16,6 +16,7 @@ const EntriesChartTracker = (props) => {
 }, [props.parentEntries]) 
 // useEffect has 2 properties one is an annynomous function and the other is when or how often it should run, default is to run cnostantly
     return (
+//      {/* https://www.react-google-charts.com/examples/line-chart */}
         <Chart
   chartType="LineChart"
   data={[["Date", "Weight"], ...chartData]}
@@ -23,6 +24,7 @@ const EntriesChartTracker = (props) => {
   width="100%"
   height="400px"
   legendToggle
+  options={{legend: {position: "bottom"}}}
 />
       );
 }
